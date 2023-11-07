@@ -1,0 +1,128 @@
+replit link: https://replit.com/join/iloavzyxdb-soniavillanueva
+
+"""
+Run the code and you will notice that when you select options 2, 3, 4 and 5 nothing
+happens.
+4. The task is simple: complete the code! Here are a few tips:
+5. Use elif to put the rest of the conditions, be careful, in the code there is a comment
+that says #here you write the rest of the code
+6. Visit https://www.w3schools.com/python/python_syntax.asp to see examples
+quickly, you can also go to modules of the course and in the second part there is a
+very useful presentation called Presentation with Replit examples, in addition to this
+you have your Python Cheat Sheet printed, what a blessing!
+7. Oh, and I almost forgot, watch out for the indentation!
+8. Upload the Replit invitation link in this section of Canvas. How simple, man!
+Extra (100+10): Create 3 more conditions with concepts we haven't seen, wow.
+"""
+
+import random
+
+def pedir_numero():
+    try:
+        tools = int(input())
+        boolean = 1
+    except ValueError:
+        boolean = 0
+        tools = 1000000
+        print("That is not a number.")
+    return tools, boolean
+
+name = input("What is your name?")
+
+print("This is the toolbox of", name)
+print("Say goodbye to the Syntax Error!")
+
+activity = input("What do you want to do?")
+#S1. asking the user what they want to do
+
+x = random.randint(1,10)
+#S2. generating a random number between 1 and 10.
+
+print("0 - print a variable")
+print("1 - ask the user something")
+print("2 - create a conditional")
+print("3 - Crear un ciclo while")
+print("4 - Crear un ciclo for")
+print("5 - Crear una lista")
+print("6 - Divertirme")
+
+boolean = 0
+while boolean == 0:
+    tools, boolean = pedir_numero()
+
+tools = []
+
+while tools not in list(range(7)):
+    print("write a valid number.")
+    print(list(range(7)))
+    herramienta, boolean=pedir_numero()
+    while boolean == 0:
+        herramienta, boolean=pedir_numero()
+
+if tools == 0:
+    print("Usa la función:")
+    print("    print()")
+    print("Dentro del paréntesis puedes poner ya sea un texto que quieras entre comillas (dobles o simples funciona bien) o una variable, yeii")
+    print("Ejemplos:")
+    print("    print('Que ondiux')")
+    print("    print('Elegiste el número',numero)")
+elif tools == 1:
+    print("Usa la función:")
+    print("    input()")
+    print("Dentro del paréntesis puedes poner un texto indicando al usuario que debe de escribir, yeii")
+    print("OJO: para usar el dato hay que meterlo dentro de una variable, y no olvides convertirlo al tipo de dato adecuado, awesome!")
+    print("Los tipos de datos son número entero int(), número decimal float() y texto str()")
+    print("Ejemplos:")
+    print("    numero_entero = int(input())")
+    print("    numero_decimal = float(input())")
+    print("    texto = str(input())")
+
+#aqui escriben el resto del codigo ustedes
+
+if tools == 0: 
+  print("Print a variable")
+  print("You do that by using the function: x= or y= ")
+  print("x= or y= (those are the variables)")
+
+elif tools == 1: 
+  print("Ask the user something")
+  print("For numbers: you use the function int(input(...))")
+  print("For text: you use the function input(...)")
+  print("For lists: you use the function list(input(...))")
+
+elif tools == 2:
+  print("Use the conditional if-function: ")
+  print("put: if (that's the condition)")
+  print("thats if the code is correct")
+  print("else: ")
+  print("thats for defining if the code is false")
+
+elif tools == 3: 
+  print("Use the while loop: ")
+  print("You start that by writing 'while'...")
+  print("Then you put the condition")
+  print("Then you put the code that you want to run")
+
+elif tools == 4: 
+  print("Use the for loop: ")
+  print("You do that by writing 'for'...")
+  print("Then you put the condition")
+  print("You put a printing function")
+
+elif tools == 5: 
+  print("Make a list: ")
+  print("You make a list by using the function list = [...]")
+  print("You put the elements of the list inside the square brackets, and so you have the list.")
+
+elif tools == 6: 
+  print("You can do a lot with the toolbox, but I'll leave now.")
+  print("Bye! See ya!")
+
+elif tools == 6:
+    aleatorio = random.randint(1,3
+    if aleatorio == 1:
+        print("Las variables tipo float se llaman así porque en los decimales el punto flota, ja, que gracioso, no?")             elif aleatorio == 2:
+        print("Sabías que las computadoras no entienden las letras ni las palabras, solo entienden 0 y 1, imaginate hablar así, 000111000 jajaja que gracioso.")
+    elif aleatorio == 3:
+        print("Python tiene además de las listas, unas cosas llamadas tuplas, la única diferencia es que ocupan menos espacio en la memoria, jaja, que manera tan rara de ahorrar")
+
