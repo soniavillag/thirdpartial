@@ -1,0 +1,38 @@
+replit link: https://replit.com/join/pnfgmwsdsy-soniavillanueva
+
+#Christmas code
+"""
+Name: Santa's list of gifts
+Objective: Help Santa to know how many presents should he make with his helpers
+They only know how to do robots, cars, and dolls.
+"""
+list = ["robots", "cars", "dolls"]
+
+numbers_of_kids = int(input("How many kids are there in the line? "))
+
+iteration = 0
+robots = 0
+# Iteration is the number of times a cycle is going to repeat til it accomplishes a goal
+
+
+while iteration < numbers_of_kids:
+  iteration = iteration + 1
+  print("It's the turn number", iteration)
+  print("This are your options of gifts: ")
+  print(list)
+
+gift = input("Hey kiddo, what do you want for Christmas? HO HO HO ")
+
+while gift not in list: 
+  gift = input("HO, HO, HO, please choose a valid option :D")
+print("Great, I'll give you", gift, "this Christmas!")
+if gift == list[0]:
+  robots = robots + 1
+
+elif gift == list[1]:
+  cars = cars + 1
+  
+elif gift == list[2]:
+  dolls = dolls + 1
+
+print(f"Santa, we need {robots} of robots, {cars}, of cars, and {dolls} of dolls.")
