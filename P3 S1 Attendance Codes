@@ -1,0 +1,71 @@
+replit link: https://replit.com/join/cyrwsmnygq-soniavillanueva
+
+"""
+Create an algorithm that simulates a travel expense recorder
+
+The first thing you should ask is the amount of expenses you had.
+
+In each iteration of the cycle it requests the amount of each expense. At the end, report the total expenses.
+
+"""
+
+counter = 0
+num_expenses = int(input("What's the amount of expenses you had?: "))
+total_expenses = 0
+while counter < num_expenses:
+  counter += 1
+  print(counter)
+  emissions = float(input("Enter the emissions for the activity: "))
+  total_expenses += emissions
+  print(total_expenses)
+
+
+"""
+Create an algorithm that simulates a savings account.
+
+The first thing you should ask is the amount saved and you will have 3 withdrawal opportunities. Accumulate the withdrawals so that at the end you report the total savings, total withdrawals, and the total balance.
+
+Balance = Savings - Withdrawals
+
+
+Note. Validate that you cannot withdraw more money than you have saved.
+
+"""
+
+counter = 0
+balance = 0
+withdrawls = input("You will have three oportunities")
+savings = float(input("Enter the savings for the activity: ")
+num_savings = int(input("What's the amount you have saved?: "))
+total_savings = 0
+
+balance = int(savings)-int(withdrawls)
+print(balance)
+
+while counter < num_savings:
+  counter += 1
+  print (counter)
+savings = float(input("Enter the savings for the activity: "))
+total_savings += emissions 
+print (total_savings)
+
+"""
+Get the factorial of a number.
+Definition. The factorial of n or n factorial is initially defined as the product of all positive integers from 1 to n.
+
+Example:
+Factorial of 4 = 4 * 3 * 2 * 1 = 24
+Factorial of 5 = 5 * 4 * 3 * 2 * 1 = 120
+
+Input: Number that you want to obtain the factorial
+
+Output: Result of the factorial
+"""
+
+number = int(input("Enter the number you want to obtain the factorial: "))
+factorial = 1
+counter = 1
+while counter <= number:
+  factorial - factorial * counter
+  counter += 1
+print(factorial)
